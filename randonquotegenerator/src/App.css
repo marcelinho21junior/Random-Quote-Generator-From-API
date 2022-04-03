@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.App{
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote{
+  background-color: rgb(235, 209, 41);
+  width: 450px;
+  height: 320px;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote h2{
+  font-size: 2em;
+  font-family: 'Lobster', 'cursive';
+}
+
+.quote small{
+  font-size: 1.5em;
+  font-family: 'Dancing Script', cursive;
+}
+
+.btn{
+  display: block;
+  border: 2px solid #008cba;
+  background: transparent;
+  padding: 10px 15px;
+  color: #008cba;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline:none;
+  transition: background 1s, color 1s;
+}
+
+.btn:hover{
+  background: #008cba;
+  color: #fff;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1.9);
+}
+
+/*mobile*/
+@media(max-width: 450px){
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #008cba;
+  }
+
+  .App{
+    width: 100%;
+    background-color:aquamarine;
+  }
+
+  .quote{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+
+  .quote h2{
+    text-align: center;
+    margin: 10px 0;
+  }
+}
